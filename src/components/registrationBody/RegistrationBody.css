@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.regMain{
+    background: url(../../assets/images/bg.webp)  no-repeat center fixed;
+    background-size: cover;
+  }
+  .regFormContainer{
+    width: 70vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .regForm {
+    width: 40%;
+    height: 20rem;
+    background-color: rgba(109, 109, 112, 0.5);
+    box-shadow: 20px 20px 50px #bebebe, -20px -20px 50px #ffffff;
+    border-radius: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .regTitle{
+    width:80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .regHeader {
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  .regHeader, .regName, .regEmail, .regPassword, .regBtn{
+    margin: 0.8rem 0;
+  }
+  .regNew{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-weight: 700;
+    font-size: 0.8rem;
+  }
+  .regNew .link{
+    padding-left: 5px;
+    text-decoration: none;
+    color: rgb(237, 228, 228);
+    font-style: bold;
+  }
+  .regName, .regEmail, .regPassword, .regBtn {
+    border: none;
+    outline: none;
+    padding: 0.6rem 1rem;
+    border-radius: 20px;
+    background-color: #aca6a6;
+    box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+    color: rgb(7, 7, 7);
+  }
+  .regBtn{
+    background-color: rgba(109, 109, 112, 0.5);
+    color: black;
+    border: none;
+    outline: none;
+    padding: 0.6rem 1rem;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #b8b6b6, -5px -5px 10px #b8b6b6;
+  }
+  .link:hover{
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: black;
+    font-style: bold;
+  }

@@ -1,0 +1,18 @@
+{
+    "userDetails": [
+        {
+            "id": 101,
+            "name": "GymUser",
+            "email": "gymuser@gmail.com",
+            "password": "GymUser@123"
+    },
+    {
+            "id": 102,
+            "name": "",
+            "email": "",
+            "password": ""
+    }
+       
+
+    ]
+}

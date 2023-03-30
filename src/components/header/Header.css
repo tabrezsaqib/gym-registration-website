@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .navmain {
+    width: 100vw;
+    height: 20vh;
+    background: url(../../assets/images/gym.jpg)  no-repeat center fixed;
+    background-size: cover;
+  }
+  .navnav {
+      width: 100%;
+      height: 65px;
+      box-sizing: border-box;
+      display: flex;
+      background-color: rgba(230, 218, 218, 0.5);
+    }
+    .navlogo {
+      width: 5%;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      padding: 0 0.7rem;
+    }
+    .navlogo img{
+      width: 1.5rem;
+    }
+    .navmenu {
+      width: 75%;
+      height: 60px;
+      background-color: transparent;
+      display: flex;
+      flex-direction: row;
+      justify-content:flex-start;
+      align-items:flex-start;
+    }
+    .navmenu ul {
+      width: 25%;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style-type: none;
+    }
+    .navmenu ul li .links {
+      padding: 0 0.7rem;
+      text-decoration: none;
+      color: black;
+      font-size: 0.8rem;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style-type: none;
+    }
+    .navlogin {
+      width: 20%;
+      height: 60px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: transparent;
+    }
+    .navlogin img {
+      width: 1.5rem;
+      margin: 10px 0;
+    }
+    .navlogin1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+    }
+    .navparent{
+      width: 10%;
+      height: 60px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+    #navsearch{
+      height: 60px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      
+    }
+    #navicon{
+      padding-right:2.5px;
+    }
+    .navsearch{
+      border-radius: 0.4rem;
+    }
+    .navintro {
+      width: 100%;
+      min-height: 65px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: rgba(237, 185, 111, 0.5);
+    }
+    .navname, .navwel{
+      width: 50%;
+      min-height: 30px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      position: sticky;
+    }
+    .active{
+      border-bottom: rgba(237, 185, 111, 0.5) solid;
+      font-size: 2.5rem;
+      font-weight: 750;
+    }

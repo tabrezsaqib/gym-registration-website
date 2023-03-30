@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .submain {
+      width: 100vw;
+      height: 100vh;
+      background: url(../../assets/images/gym.jpg)  no-repeat center fixed;
+      background-size: cover;
+    }
+    .subparent{
+      width: 100vw;
+      height: 80vh;
+      position: relative;
+    }
+    .subleft{
+      width: 35%;
+      height: 50%;
+      position: absolute;
+      left: 5%;
+      top:15%;
+      padding-bottom: 2.5rem;
+      padding-right: 2rem;
+      padding-left:2rem;
+      background-color: rgba(109, 109, 112, 0.5);
+      box-shadow: 20px 20px 50px #bebebe, -20px -20px 50px #ffffff;
+      border-radius: 2.5rem;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .subright{
+      width: 35%;
+      height: 50%;
+      position: absolute;
+      top:15%;
+      right: 5%;
+      padding-bottom: 2.5rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      background-color: rgba(109, 109, 112, 0.5);
+      box-shadow: 20px 20px 50px #bebebe, -20px -20px 50px #ffffff;
+      border-radius: 2.5rem;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .subtitle{
+      color: orange;
+      padding: 2rem;
+    }
+    .subcontent{
+      text-align: justify;
+      padding-bottom: 2rem;
+    }
+    .buybutton{
+      background-color: rgba(109, 109, 112, 0.5);
+      color: orange;
+      border: none;
+      outline: none;
+      padding: 0.6rem 1rem;
+      border-radius: 20px;
+      box-shadow: 5px 5px 10px #b8b6b6, -5px -5px 10px #b8b6b6;
+    }
+    .subbutton{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      gap:20px;
+    }

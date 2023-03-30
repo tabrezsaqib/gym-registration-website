@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .homemain {
+    width: 100vw;
+    height: 100vh;
+    background: url(../../assets/images/gym.jpg)  no-repeat center fixed;
+    background-size: cover;
+  }
+  .homenav {
+    width: 100%;
+    height: 65px;
+    box-sizing: border-box;
+    display: flex;
+    background-color: rgba(230, 218, 218, 0.5);
+  }
+  .homelogo {
+    width: 5%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+  }
+  .homelogo img{
+    width: 1.5rem;
+  }
+  .homemenu {
+    width: 75%;
+    height: 60px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items:flex-start;
+  }
+  .homemenu ul {
+    width: 25%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+  }
+  .homemenu ul li a {
+    padding: 0 0.7rem;
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+  }
+  .homelogin {
+    width: 20%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: transparent;
+  }
+  .homelogin img {
+    width: 1.5rem;
+    margin: 10px 0;
+  }
+  .homelogin1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+  }
+  .homeparent{
+    width: 10%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+  #homesearch{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    
+  }
+  #homeclock{
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+  #homeicon{
+    padding-right:2.5px;
+  }
+  .homeimages{
+    width: 100%;
+    min-height:2.5em;
+    padding: 2.5rem 0.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .homecard1, .homecard2, .homecard3{
+    width: 30%;
+    min-height: 1.5em;
+    padding: 0.6rem 0.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(20, 20, 21, 0.5);
+    box-shadow: 20px 20px 50px #bebebe, -20px -20px 50px #ffffff;
+    border-radius: 2rem;
+  }
+  .homecard{
+    border-radius: 2rem;
+  }
+  .homesearch{
+    border-radius: 0.4rem;
+  }
+  .homeintro {
+    width: 100%;
+    min-height: 65px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(237, 185, 111, 0.5);
+    position: sticky;
+  }
+  .homename, .homewel{
+    width: 50%;
+    min-height: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+  }
+  .homedesc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+  }
+  .hometitle{
+      color: orange;
+      padding: 2rem;
+  }
+  .homeslogan{
+    color: white;
+    padding: 0.6rem;
+    font-weight: 700;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+  }
+  .homecontent{
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    text-align: justify;
+  }
+  
