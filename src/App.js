@@ -8,6 +8,7 @@ import Membership from './pages/membership/Membership';
 import Subscription from './pages/subscription/Subscription';
 import Checkout from './pages/checkout/Checkout';
 import {useStateValue} from './redux/StateProvider'
+import Profile from './pages/profile/Profile';
 
 function App() {
   const [apiResp, setApiResp] = useState();
@@ -27,7 +28,7 @@ function App() {
   useEffect(() => {
     dispatch({ type: "APIDATA", value: apiResp });
   }, [apiResp]);
-  
+
   console.log("apiiiiiii", apiResp);
   return (
     <div className="App">
@@ -38,6 +39,7 @@ function App() {
           <Route  path="/home" element={<Home />}/>
           <Route  path="/membership" element={<Membership />}/>
           <Route  path="/subscription" element={<Subscription />}/>
+          <Route  path="/profile" element={<Profile/>}/>
           <Route  path="/checkout" element={<Checkout />}/>
         </Routes>
       </BrowserRouter>

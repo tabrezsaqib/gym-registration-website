@@ -41,14 +41,18 @@ function Header() {
                         </div>
                     </div>
                     <div className="navlogin">
-                        <div className="navlogin1">
-                            <img src={person_fill}  width="40%" alt='not found'/>
-                            <p>Profile</p>
-                        </div>
-                        <div className="navlogin1">
-                            <img src={bag_fill}  width="40%" alt='not found'/>
-                            <p>Checkout</p>
-                        </div>
+                        <NavLink className="links" to="/profile">
+                            <div className="navlogin1">
+                                <img src={person_fill}  width="40%" alt='not found'/>
+                                <p>Profile</p>
+                            </div>
+                        </NavLink>
+                        <NavLink className="links" to="/checkout">
+                            <div className="navlogin1">   
+                                <img src={bag_fill}  width="40%" alt='not found'/>
+                                <p>Checkout</p>
+                            </div>
+                        </NavLink>
                     </div>
                 </div>
             </div>

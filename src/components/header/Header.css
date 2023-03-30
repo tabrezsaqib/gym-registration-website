@@ -67,7 +67,7 @@
     }
     .navlogin img {
       width: 1.5rem;
-      margin: 10px 0;
+      margin: 0.25px 0;
     }
     .navlogin1 {
       display: flex;
@@ -126,4 +126,8 @@
       border-bottom: rgba(237, 185, 111, 0.5) solid;
       font-size: 2.5rem;
       font-weight: 750;
+    }
+    .links{
+      text-decoration: none;
+      color: black;
     }
