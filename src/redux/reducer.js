@@ -1,7 +1,19 @@
 export const initialState = {
     apiData: [],
-    userDetails: {},
-    formData: {},
+    userCredentials: {
+        name: "gymuser",
+        email: "gymuser@gmail.com",
+        password: "GymUser@2020"
+    },
+    userDetails: {
+        name: "",
+        email: "",
+        password: ""
+      },
+    formData: {
+      email: "",
+        password: ""
+    },
     cartArray: []
   };
 
@@ -18,7 +30,7 @@ export const reducer = (state, action) => {
         return { ...state, apiData: action.value };
     
         case "USERDETAILS":
-            return { ...state, userDetails: action.value };
+            return { ...state, userDetails: action.value  };
         
         case "FORMDATA":
             return { ...state, formData: action.value };

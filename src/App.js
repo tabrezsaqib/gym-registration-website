@@ -29,7 +29,7 @@ function App() {
     dispatch({ type: "APIDATA", value: apiResp });
   }, [apiResp]);
 
-  console.log("apiiiiiii", apiResp);
+  // console.log("apiiiiiii", apiResp);
   return (
     <div className="App">
       <BrowserRouter>

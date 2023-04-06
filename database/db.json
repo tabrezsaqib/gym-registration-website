@@ -1,18 +1,16 @@
 {
-    "userDetails": [
-        {
-            "id": 101,
-            "name": "GymUser",
-            "email": "gymuser@gmail.com",
-            "password": "GymUser@123"
+  "userDetails": [
+    {
+      "id": 101,
+      "name": "GymUser",
+      "email": "gymuser@gmail.com",
+      "password": "GymUser@123"
     },
     {
-            "id": 102,
-            "name": "",
-            "email": "",
-            "password": ""
+      "name": "Tab",
+      "email": "tab@yahoo.com",
+      "password": "Tabs",
+      "id": 102
     }
-       
-
-    ]
+  ]
 }
