@@ -11,23 +11,23 @@ import {useStateValue} from './redux/StateProvider'
 import Profile from './pages/profile/Profile';
 
 function App() {
-  const [apiResp, setApiResp] = useState();
+  // const [apiResp, setApiResp] = useState();
 
   const [, dispatch] = useStateValue();
 
-  useEffect(() => {
-    fetch("http://localhost:3001/userDetails")
-      .then((resp) => {
-        return resp.json();
-      })
-      .then((data) => {
-        setApiResp(data);
-      });
-  }, []);
+  // useEffect(() => {
+  //   fetch("http://localhost:3001/userDetails")
+  //     .then((resp) => {
+  //       return resp.json();
+  //     })
+  //     .then((data) => {
+  //       setApiResp(data);
+  //     });
+  // }, []);
 
-  useEffect(() => {
-    dispatch({ type: "APIDATA", value: apiResp });
-  }, [apiResp]);
+  // useEffect(() => {
+  //   dispatch({ type: "APIDATA", value: apiResp });
+  // }, [apiResp]);
 
   // console.log("apiiiiiii", apiResp);
   return (

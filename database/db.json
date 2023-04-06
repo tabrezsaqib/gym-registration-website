@@ -7,9 +7,9 @@
       "password": "GymUser@123"
     },
     {
-      "name": "Tab",
-      "email": "tab@yahoo.com",
-      "password": "Tabs",
+      "name": "New User",
+      "email": "newuser@gmail.com",
+      "password": "NewUser@12",
       "id": 102
     }
   ]

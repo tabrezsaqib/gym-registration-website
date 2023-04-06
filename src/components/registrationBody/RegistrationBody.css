@@ -76,3 +76,8 @@
     color: black;
     font-style: bold;
   }
+  .regnameError,
+      .regemailError,
+      .regpasswordError {
+        color: red;
+      }

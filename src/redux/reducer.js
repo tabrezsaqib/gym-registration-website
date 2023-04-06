@@ -5,11 +5,7 @@ export const initialState = {
         email: "gymuser@gmail.com",
         password: "GymUser@2020"
     },
-    userDetails: {
-        name: "",
-        email: "",
-        password: ""
-      },
+    userDetails: [],
     formData: {
       email: "",
         password: ""
