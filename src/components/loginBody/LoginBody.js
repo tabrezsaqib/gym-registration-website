@@ -3,6 +3,8 @@ import "./LoginBody.css";
 import {NavLink, useNavigate} from "react-router-dom";
 import {useStateValue} from "../../redux/StateProvider";
 
+// import firebase from 'firebase/app';
+
 function LoginBody(props) {
   const [{ userDetails, formData, apiData }, dispatch] = useStateValue();
   const [apiResp, setApiResp] = useState();
@@ -33,10 +35,10 @@ function LoginBody(props) {
         setBtnState(true);
     }
 }, [loginDetails.email, loginDetails.password])
-function submitData(e){
+const submitData = async (e) => {
     e.preventDefault();
     dispatch({ type: "FORMDATA", value: loginDetails });
-    apiResp &&
+    await apiResp &&
           apiResp.map((element) => {
             if (
               element?.email
@@ -51,10 +53,19 @@ function submitData(e){
             }
           }); 
 }
+// const handleSignIn = async () => {
+//   try {
+//     await firebase.auth().signInWithEmailAndPassword(loginDetails.email, loginDetails.password);
+//     navigate('/home');
+//   } catch (error) {
+//     console.error(error);
+//     alert("Invalid Credentials");
+//   }
+// };
   return (
     <div className='loginMain'>
         <div className='loginFormContainer'>
-            <form className='loginForm' action="">
+            <form className='loginForm' action="" onSubmit={submitData}>
                     <input type="text" 
                     name="email" 
                     placeholder="Email address" 
@@ -78,9 +89,12 @@ function submitData(e){
                         value="Login" 
                         className='loginBtn'
                         disabled={btnState}
-                        onClick={(e) => {
-                        submitData(e);
-                          }}
+                        // onClick={
+                        //   // (e) => {
+                        // // submitData(e);
+                        // handleSignIn
+                        //   // }
+                        // }
                         />
                     {/* </NavLink> */}
             </form>

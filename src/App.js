@@ -10,10 +10,17 @@ import Checkout from './pages/checkout/Checkout';
 import {useStateValue} from './redux/StateProvider'
 import Profile from './pages/profile/Profile';
 
+// import firebase from 'firebase/app';
+// import 'firebase/auth';
+// import 'firebase/firestore';
+// import firebaseConfig from './firebaseConfig';
+
 function App() {
   const [apiResp, setApiResp] = useState();
 
   const [, dispatch] = useStateValue();
+
+  // firebase.initializeApp(firebaseConfig);
 
   useEffect(() => {
     fetch("http://localhost:3001/userDetails")
